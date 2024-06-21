@@ -1590,7 +1590,7 @@ xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og)
 			xdrawglyph(g, cx, cy);
 			break;
 		case 3: /* blinging underline */
-			if (IS_SET(MODE_BLINKJ))
+			if (IS_SET(MODE_BLINK))
 				break;
 			/* FALLTHROUGH */
 		case 4: /* steady underline */
@@ -1616,7 +1616,7 @@ xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og)
 			/* FALLTHROUGH */
 		case 8: /* steady st cursor */
 			g.u = stcursor;
-			xdrawglyph(g, cx. cy);
+			xdrawglyph(g, cx, cy);
 			break;
 		}
 	} else {
