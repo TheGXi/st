@@ -1,0 +1,8 @@
+# ignore *.o *.orig *.rej
+*.rej
+*.orig
+*.o
+
+# ignore config.h st
+config.h
+st
